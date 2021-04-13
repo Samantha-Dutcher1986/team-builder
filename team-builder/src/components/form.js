@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import './form.css';
 
 const Form = (props) => {
-    const [data, setData] = ({ name: '', email: '', role: '' })
+    const [data, setData] = useState({
+        name: '',
+        email: '',
+        role: '',
+    })
 
     const submitHandler = (event) => {
         event.preventDefault()
